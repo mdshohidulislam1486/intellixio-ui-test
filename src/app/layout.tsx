@@ -1,14 +1,14 @@
-import { UserAgentProvider } from "../components/providers/userAgentProvider";
-import "./globals.css";
-import { Layout } from "@/components/layout";
+import { Providers } from '@/components/providers';
+import './globals.css';
+import { Layout } from '@/components/layout';
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <UserAgentProvider>
+        <Providers>
           <Layout>{children}</Layout>
-        </UserAgentProvider>
+        </Providers>
       </body>
     </html>
   );
